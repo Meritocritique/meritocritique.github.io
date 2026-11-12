@@ -1,0 +1,73 @@
+/* Charte visuelle @meritocritique : .claude/rules/charte-visuelle.md fait foi. */
+:root {
+  --papier: #F1ECE2;
+  --document: #FBF9F4;
+  --encre: #141414;
+  --surligneur: #FFE14D;
+  --note: #6B665C;
+  --titre: 'Bricolage Grotesque', system-ui, sans-serif;
+  --texte: 'DM Sans', system-ui, sans-serif;
+  --piece: 'Courier Prime', ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--encre);
+  font: 400 17px/1.6 var(--texte);
+}
+.bandeau { padding: 18px 16px; border-bottom: 2px solid var(--encre); }
+.marque {
+  font: 800 24px/1 var(--titre);
+  color: var(--encre);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.marque span { background: var(--surligneur); padding: 0 4px; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+h1 { font: 800 clamp(30px, 7vw, 46px)/1.08 var(--titre); margin: 6px 0 24px; letter-spacing: -0.5px; }
+h2 {
+  font: 800 22px/1.2 var(--titre);
+  margin: 36px 0 12px;
+  display: inline-block;
+  background: linear-gradient(transparent 55%, var(--surligneur) 55%);
+  padding: 0 2px;
+}
+.chapo { font-size: 19px; margin: 0 0 28px; }
+.meta { font: 400 14px/1.4 var(--piece); color: var(--note); margin: 0; }
+a { color: var(--encre); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { background: var(--surligneur); }
+ul, ol { padding-left: 22px; }
+li { margin: 0 0 12px; }
+li ul, li ol { margin-top: 10px; }
+.rubrique.sources ol {
+  background: var(--document);
+  padding: 20px 20px 20px 44px;
+  box-shadow: 0 1px 1px rgba(40,30,10,.10), 0 4px 10px rgba(40,30,10,.08);
+}
+.rubrique.sources li { font: 400 15px/1.5 var(--piece); overflow-wrap: anywhere; }
+code { font-family: var(--piece); font-size: .92em; }
+.contenus { list-style: none; padding: 0; margin: 0; }
+.contenus li { margin: 0; border-top: 1px solid rgba(20,20,20,.15); }
+.contenus li:last-child { border-bottom: 1px solid rgba(20,20,20,.15); }
+.contenus a { display: block; padding: 16px 4px; text-decoration: none; }
+.contenus .titre { display: block; font: 800 21px/1.25 var(--titre); margin-top: 4px; }
+.contenus .vide { padding: 16px 4px; color: var(--note); }
+.apercu {
+  font: 700 14px/1.4 var(--piece);
+  background: var(--encre);
+  color: var(--papier);
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0 0 16px;
+}
+.retour { margin-top: 40px; }
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  border-top: 1px solid rgba(20,20,20,.15);
+  font: 400 14px/1.5 var(--piece);
+  color: var(--note);
+}
