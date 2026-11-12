@@ -17,7 +17,18 @@ body {
   color: var(--encre);
   font: 400 17px/1.6 var(--texte);
 }
-.bandeau { padding: 18px 16px; border-bottom: 2px solid var(--encre); }
+.bandeau {
+  padding: 18px 16px;
+  border-bottom: 2px solid var(--encre);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.bandeau nav { display: flex; gap: 18px; font: 700 15px/1 var(--texte); }
+.bandeau nav a { text-decoration: none; }
+main > p { margin: 0 0 14px; }
 .marque {
   font: 800 24px/1 var(--titre);
   color: var(--encre);
